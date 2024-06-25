@@ -1,0 +1,188 @@
+
+body {
+    background-color: #eeeeee; 
+ 
+           
+    font-family: Arial, sans-serif; 
+    margin: 0;                 
+    padding: 0px;            
+}        
+.first_page{
+    color: #eeeeee; 
+    background-color: #414B56;
+    margin:0;
+    height: 100vh;
+}
+.header{
+    padding:0.1cm;
+    display:flex;
+    position: relative; 
+
+}
+.title{
+    font-weight: bolder;
+    margin:0;
+    padding:0;
+}
+.title_container{
+    margin-left:1cm;
+    margin-top:0.5cm;
+}
+.element_right{
+    position: absolute;
+    display:flex;
+    right:1cm;
+    top: 0.5cm; 
+    justify-content: center; 
+    align-items: center;
+}
+.element_menu{
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:0.5cm;
+}
+
+.btn1{
+    text-decoration: none; 
+    color: inherit;
+    margin-right: 1cm;
+}
+.btn2{
+    text-decoration: none; 
+    color: inherit;
+    margin-right: 1cm;
+}
+.linkdin_logo{
+    width:0.8cm;
+    height: 0.8cm;
+    margin-right:0.4cm;
+}
+.mail_logo{
+    width:0.8cm;
+    height: 0.8cm;
+}
+.github_logo{
+    width:0.8cm;
+    height: 0.8cm;
+    margin-right:0.4cm
+}
+.second_half {
+    flex-direction: column;
+    height:93vh;
+    width:100%; /* Adjusted to 100vh for full viewport height */
+    display: flex;
+    position: relative;
+    overflow: hidden; /* Ensure pseudo-element doesn't overflow */
+}
+
+.second_half::before {
+    content: '';
+    position: absolute;
+    border-top-left-radius: 100px;
+    right:0cm;
+    bottom:0cm;
+    z-index:1;
+    background: linear-gradient(to top, #414B56, #eeeeee); ;
+    height:14cm;
+    width: 13cm;
+}
+
+
+.myimage {
+    z-index:2;
+    position:absolute;
+    right:0.5cm;
+    bottom:0cm;
+    height: auto; 
+    width: 12cm; 
+}
+
+.myname_big {
+    font-size: 10vw;
+    font-weight: 700;
+    margin-left:1cm;
+    margin-top:2.4cm; 
+    position: absolute;
+    z-index: 2;
+}
+
+.specialite{
+    bottom:5cm;
+    left:1cm;
+    position:absolute;
+    margin:0;
+    padding:0;
+}
+
+.second_page{
+    color:#414B56;
+    height: fit-content;
+    padding-bottom:0.5cm;
+
+}
+.flex_class{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.title_second_page{
+    margin-top:1cm;
+    margin-left: 8.5cm;
+    margin-bottom:0;
+    padding-bottom: 0;
+}
+.personnel_intro{
+    width:14cm;
+    text-align: justify;
+    font-size:larger;
+    font-weight: bolder;
+}
+.myimage2{
+    height:8cm;
+    margin-left:3cm;
+}
+.third_page{
+    background-color: #414B56;
+    color: #eeeeee;
+    padding-top:0.1cm;
+    height:16cm;
+}
+.center{
+    display:flex;
+    padding-left:8.5cm;
+}
+.domaine{
+    background-color:#eeeeee;
+    color:#414B56;
+    width:8cm;
+    height:auto;
+    margin-top:1cm;
+    border-radius: 10px;
+    padding-bottom:1cm;
+    margin-right:1cm;
+}
+.domaine_title{
+    margin-left:0.7cm;
+}
+.skill{
+    margin-left:1.4cm;
+}
+.skill_title{
+    margin-bottom: 5px;
+    margin-top:14px;
+}
+.progress-bar {
+    width: 87%;
+    background-color: #ddd;
+    height: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background-color:#414B56;
+    border-radius: 10px;
+}
