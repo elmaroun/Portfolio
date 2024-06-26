@@ -12,12 +12,31 @@ body {
     background-color: #414B56;
     margin:0;
     height: 100vh;
+    display:flex;
+    position:relative;
+}
+.position{
+    width: 100%;
+    display:flex;
+    position:relative; 
+    justify-content: center;
+
 }
 .header{
+    background-color:#eeeeee;
+    color:#414B56;
+    width:100%;
+    height:1.7cm;
     padding:0.1cm;
-    display:flex;
-    position: relative; 
-
+    position: fixed;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+    z-index:1000;
+}
+.header.scrolled {
+    background-color:#414B56; /* Change this color to whatever you want when scrolled */
+    color:#eeeeee; /* Change text color if needed */
 }
 .title{
     font-weight: bolder;
@@ -66,13 +85,15 @@ body {
     height: 0.8cm;
     margin-right:0.4cm
 }
+
 .second_half {
     flex-direction: column;
     height:93vh;
     width:100%; /* Adjusted to 100vh for full viewport height */
     display: flex;
     position: relative;
-    overflow: hidden; /* Ensure pseudo-element doesn't overflow */
+    overflow: hidden;
+    top:1.3cm; /* Ensure pseudo-element doesn't overflow */
 }
 
 .second_half::before {
@@ -145,21 +166,30 @@ body {
     background-color: #414B56;
     color: #eeeeee;
     padding-top:0.1cm;
-    height:16cm;
-}
-.center{
-    display:flex;
+    height:auto;
+    padding-right:8.5cm;
     padding-left:8.5cm;
+    padding-bottom:1cm;
 }
-.domaine{
+.title_third_page{
+    margin-top:1cm;
+    margin-bottom:0;
+}
+.skills{
+    display:flex;
+    justify-content: center;
+}
+.domaine,.domaine_last{
     background-color:#eeeeee;
     color:#414B56;
-    width:8cm;
+    width:55%;
     height:auto;
     margin-top:1cm;
     border-radius: 10px;
     padding-bottom:1cm;
-    margin-right:1cm;
+}
+.domaine{
+    margin-right: 1cm;
 }
 .domaine_title{
     margin-left:0.7cm;
@@ -185,4 +215,45 @@ body {
     height: 100%;
     background-color:#414B56;
     border-radius: 10px;
+}
+
+.fourth_page{
+    background-color: #eeee;
+    color:#414B56;
+    padding-top:0.1cm;
+    height:auto;
+    padding-right:8.5cm;
+    padding-left:8.5cm;
+    padding-bottom:1cm;
+    min-height:5cm;
+}
+
+.Projet_title{
+    margin-left:0.7cm;
+}
+.Projet{
+    background-color: #414B56;
+    color:#eeeeee;
+    width:100%;
+    border-radius: 10px;
+    padding-top:0.5cm;
+    padding-bottom:0.5cm;
+    margin-top:1cm;
+}
+.description_projet{
+    margin-left:1.4cm;
+    margin-top:14px;
+}
+.alignment{
+    display:flex;
+    width:100%;
+}
+.edunest_logo{
+    width:1cm;
+    height: 1cm;
+    margin-left:1.5cm;
+    margin-top:0.5cm;
+}
+.title_technologies{
+    margin-left:0.7cm;
 }
