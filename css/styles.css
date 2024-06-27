@@ -243,6 +243,7 @@ body {
 .description_projet{
     margin-left:1.4cm;
     margin-top:14px;
+    margin-right:1.4cm;
 }
 .alignment{
     display:flex;
