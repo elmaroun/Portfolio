@@ -290,7 +290,7 @@ body {
         color: #eeeeee; 
         background-color: #414B56;
         margin:0;
-        height: 100vh;
+        height: fit-content;
         display:flex;
         position:relative;
     }
@@ -370,12 +370,12 @@ body {
     
     .second_half {
         flex-direction: column;
-        height:93vh;
+
         width:100%; /* Adjusted to 100vh for full viewport height */
         display: flex;
         position: relative;
         overflow: hidden;
-        top:1.3cm; /* Ensure pseudo-element doesn't overflow */
+        top:0cm; /* Ensure pseudo-element doesn't overflow */
     }
     
     .second_half::before {
@@ -405,7 +405,7 @@ body {
         top:15%;
         width:100%;
         height: fit-content;
-        background-color: rgb(93, 0, 255);
+
         z-index:100;
         display:flex;
         flex-direction: column;
