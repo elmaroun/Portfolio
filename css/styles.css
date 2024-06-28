@@ -117,20 +117,26 @@ body {
     height: auto; 
     width:453.543px ; 
 }
-
+.the_writing{
+    left:2%;
+    position:relative;
+    top:15%;
+    z-index:100;
+    display:flex;
+    flex-direction: column;
+}
 .myname_big {
     font-size: 10vw;
     font-weight: 700;
-    margin-left:1cm;
-    margin-top:2.4cm; 
-    position: absolute;
     z-index: 2;
+    margin-bottom:0;
+    margin-top:0;
 }
-
+.hi{
+    margin-bottom:0;
+    margin-left:3px;
+}
 .specialite{
-    bottom:188.976px;
-    left:37.795px;
-    position:absolute;
     margin:0;
     padding:0;
 }
@@ -327,11 +333,13 @@ body {
         top: 18.898px; 
         justify-content: center; 
         align-items: center;
+        display:none
     }
     .element_menu{
         position:absolute;
-        left:37px;
-        margin-right:37.795px;
+
+        justify-content: center;
+
         margin-top:18.898px;
     }
     
@@ -378,8 +386,8 @@ body {
         bottom:0cm;
         z-index:1;
         background: linear-gradient(to top, #414B56, #eeeeee); ;
-        height:529.134px;
-        width: 491.339px;
+        height:40%;
+        width: 70%;
     }
     
     
@@ -389,22 +397,28 @@ body {
         right:18.898px;
         bottom:0cm;
         height: auto; 
-        width:453.543px ; 
+        width:65% ; 
+    }
+
+    .the_writing{
+        position:relative;
+        top:15%;
+        width:100%;
+        height: fit-content;
+        background-color: rgb(93, 0, 255);
+        z-index:100;
+        display:flex;
+        flex-direction: column;
     }
     
     .myname_big {
         font-size: 10vw;
-        font-weight: 700;
-        margin-left:1cm;
-        margin-top:2.4cm; 
-        position: absolute;
+        font-weight: 700; 
         z-index: 2;
     }
     
     .specialite{
-        bottom:188.976px;
-        left:37.795px;
-        position:absolute;
+        z-index:2;
         margin:0;
         padding:0;
     }
@@ -416,9 +430,11 @@ body {
     
     }
     .flex_class{
+        margin-top:20px;
         display:flex;
         align-items: center;
         justify-content: center;
+        flex-direction:column-reverse;
     }
     .title_second_page{
         margin-top:37.795px;
@@ -427,8 +443,8 @@ body {
         padding-bottom: 0;
     }
     .personnel_intro{
-        margin-left:20px;
-        width:50%;
+
+        width:80%;
         text-align: justify;
         font-size:larger;
         font-weight: bolder;
@@ -454,21 +470,23 @@ body {
     }
     
     .skills{
+
         display:flex;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     .domaine,.domaine_last{
         background-color:#eeeeee;
         color:#414B56;
-        width:45%;
+        width:60%;
         height: auto;
         margin-top:1cm;
         border-radius: 10px;
         padding-bottom:37.795px;
+        margin-right: 0;
     }
-    .domaine{
-        margin-right:18px;
-    }
+   
     .domaine_title{
         margin-left:10px;
     }
